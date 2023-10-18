@@ -2,7 +2,7 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #03A9F4, #4CAF50);
+    background: linear-gradient(179deg, #1c4559, #1899d79e);
 }
 
 .color-picker-container {
@@ -19,11 +19,29 @@
 
 .tools-section {
     text-align: center;
+    display: 'inline' 
+}
+
+.top-section{
+    padding-top: 10px;
+}
+
+.clear-canvas-container button {
+    display: inline;
+    margin-left: 12px;
+}
+
+.eraser-button{
+    margin: 10px;
+}
+
+select,button{
+    height: 25px;
 }
 
 .board-container {
-    width: 90%;
-    height: 90%;
+    width: 95%;
+    height: 88%;
     margin: auto;
     margin-top: 1%;
     background: white;

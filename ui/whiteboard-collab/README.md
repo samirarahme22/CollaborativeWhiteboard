@@ -1,68 +1,58 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Collaborative Whiteboard Documentation
 
-## Available Scripts
+Table of Contents:
+  1.Introduction
+  2.Project Structure
+  3.Technologies Used
+  4.Installation
+  5.Usage
+  6.API Reference
 
-In the project directory, you can run:
+1. Introduction:
+Collaborative Whiteboard is an interactive web application that allows users to draw and collaborate on a shared whiteboard in real-time. This documentation provides an overview of the project structure, technologies used, installation instructions, and usage guidelines.
 
-### `npm start`
+2. Project Structure:
+-server: Contains the server-side code for handling real-time communication and canvas data sharing.
+   -node_modules: Node.js dependencies are stored here.
+   -package-lock.json: A JSON file that contains information about project dependencies.
+   -server.js: The main server file responsible for setting up the WebSocket server and handling client connections.
+-ui: Contains the front-end code for the web application.
+   -whiteboard-collab: The root directory for the React application.
+     -node_modules: Node.js dependencies for the front-end.
+     -public: Static files and HTML templates.
+     -src: Source code for the React application.
+       -components: React components used in the application.
+         -board: Contains components related to the whiteboard.
+           -Board.jsx: Component responsible for drawing and sharing canvas data.
+         -container: Contains components related to the user interface and settings.
+           -Container.jsx: Component for user interface and settings.
+       -App.js: The main React component for rendering the application
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3. Technologies Used:
+-Node.js: Backend server environment.
+-Express.js: Framework for building the server.
+-Socket.io: Library for real-time communication.
+-React: Front-end library for building user interfaces.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+4. Installation:
+-Clone the repository to your local machine.
+-Open a terminal and navigate to the server directory.
+-Run npm install to install the server dependencies.
+-Navigate to the ui/whiteboard-collab directory.
+-Run npm install to install the front-end dependencies.
+-Start the server by running node server.js in the server directory.
+-Start the React application by running npm start in the ui/whiteboard-collab directory.
 
-### `npm test`
+5. Usage:
+-Access the Collaborative Whiteboard application in your web browser.
+-Use the color picker to select a brush color.
+-Choose a brush size from the dropdown menu.
+-Click the "Eraser" button to toggle eraser mode.
+-Click and drag on the whiteboard to draw or erase.
+-Use the "Clear All" button to clear the entire whiteboard.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+6. API Reference:
+The server communicates with clients using WebSocket connections through Socket.io. Refer to the server code in server.js for API implementation details.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

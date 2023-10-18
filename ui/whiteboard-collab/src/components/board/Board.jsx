@@ -88,14 +88,35 @@ class Board extends React.Component {
             ctx.closePath();
             ctx.stroke();
 
-            if(root.timeout != undefined) clearTimeout(root.timeout);
+            if(root.timeout !== undefined) clearTimeout(root.timeout);
             root.timeout = setTimeout(function(){
                 var base64ImageData = canvas.toDataURL("image/png");
                 root.socket.emit("canvas-data", base64ImageData);
             }, 1000)
         };
     }
+    handleMouseDown(e) {
+        this.isDrawing = true;
+        this.ctx.beginPath();
+        this.ctx.moveTo(e.clientX, e.clientY);
 
+        if (this.props.eraserMode) {
+            this.ctx.strokeStyle = "#ffffff"; // Set the color to white for erasing
+        } else {
+            this.ctx.strokeStyle = this.props.color; // Set the brush color
+        }
+    }
+
+    handleMouseDown(e) {
+        this.isDrawing = true;
+        this.ctx.beginPath();
+        this.ctx.moveTo(e.clientX, e.clientY);
+        this.ctx.strokeStyle = this.props.eraserMode ? "#ffffff" : this.props.color;
+    }
+
+    handleMouseUp() {
+        this.isDrawing = false;
+    }
     render() {
         return (
             <div class="sketch" id="sketch">
