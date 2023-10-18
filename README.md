@@ -9,7 +9,7 @@ Table of Contents:
 5.	Usage
 6.	API Reference
 
- Introduction:
+Introduction:
 Collaborative Whiteboard is an interactive web application that allows users to draw and collaborate on a shared whiteboard in real-time. This documentation provides an overview of the project structure, technologies used, installation instructions, and usage guidelines.
 
 Project Structure:
