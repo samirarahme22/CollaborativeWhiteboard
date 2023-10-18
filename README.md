@@ -10,9 +10,11 @@ Table of Contents:
 6.	API Reference
 
 Introduction:
+
 Collaborative Whiteboard is an interactive web application that allows users to draw and collaborate on a shared whiteboard in real-time. This documentation provides an overview of the project structure, technologies used, installation instructions, and usage guidelines.
 
 Project Structure:
+
 -server: Contains the server-side code for handling real-time communication and canvas data sharing.
    -node_modules: Node.js dependencies are stored here.
    -package-lock.json: A JSON file that contains information about project dependencies.
@@ -30,12 +32,14 @@ Project Structure:
        -App.js: The main React component for rendering the application
 
 Technologies Used:
+
 -Node.js: Backend server environment.
 -Express.js: Framework for building the server.
 -Socket.io: Library for real-time communication.
 -React: Front-end library for building user interfaces.
 
 Installation:
+
 -Clone the repository to your local machine.
 -Open a terminal and navigate to the server directory.
 -Run npm install to install the server dependencies.
@@ -45,6 +49,7 @@ Installation:
 -Start the React application by running npm start in the ui/whiteboard-collab directory.
 
 Usage:
+
 -Access the Collaborative Whiteboard application in your web browser.
 -Use the color picker to select a brush color.
 -Choose a brush size from the dropdown menu.
@@ -53,5 +58,6 @@ Usage:
 -Use the "Clear All" button to clear the entire whiteboard.
 
 API Reference:
+
 The server communicates with clients using WebSocket connections through Socket.io. Refer to the server code in server.js for API implementation details.
 
