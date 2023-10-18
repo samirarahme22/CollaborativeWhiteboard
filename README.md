@@ -15,36 +15,23 @@ Collaborative Whiteboard is an interactive web application that allows users to 
 
 
 Project Structure:
+- server: Contains the server-side code for handling real-time communication and canvas data sharing.
+  - node_modules: Node.js dependencies are stored here.
+  - package-lock.json: A JSON file that contains information about project dependencies.
+  - server.js: The main server file responsible for setting up the WebSocket server and handling client connections.
 
--server: Contains the server-side code for handling real-time communication and canvas data sharing.
+- ui: Contains the front-end code for the web application.
+  - whiteboard-collab: The root directory for the React application.
+    - node_modules: Node.js dependencies for the front-end.
+    - public: Static files and HTML templates.
+    - src: Source code for the React application.
+      - components: React components used in the application.
+        - board: Contains components related to the whiteboard.
+          - Board.jsx: Component responsible for drawing and sharing canvas data.
+        - container: Contains components related to the user interface and settings.
+          - Container.jsx: Component for user interface and settings.
+      - App.js: The main React component for rendering the application.
 
-   -node_modules: Node.js dependencies are stored here.
-
-   -package-lock.json: A JSON file that contains information about project dependencies.
-
-   -server.js: The main server file responsible for setting up the WebSocket server and handling client connections.
-
--ui: Contains the front-end code for the web application.
-
-   -whiteboard-collab: The root directory for the React application.
-
-     -node_modules: Node.js dependencies for the front-end.
-
-     -public: Static files and HTML templates.
-
-     -src: Source code for the React application.
-
-       -components: React components used in the application.
-
-         -board: Contains components related to the whiteboard.
-
-           -Board.jsx: Component responsible for drawing and sharing canvas data.
-           
-         -container: Contains components related to the user interface and settings.
-
-           -Container.jsx: Component for user interface and settings.
-
-       -App.js: The main React component for rendering the application
 
 
 Technologies Used:
