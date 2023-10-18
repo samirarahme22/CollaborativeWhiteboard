@@ -1,8 +1,11 @@
 Collaborative Whiteboard Documentation
 
 Table of Contents:
+
   1.Introduction
+
   2.Project Structure
+
   3.Technologies Used
   4.Installation
   5.Usage
