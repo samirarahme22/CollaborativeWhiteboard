@@ -2,12 +2,12 @@ Collaborative Whiteboard Documentation
 
 Table of Contents:
 
-  1.Introduction
-  2.Project Structure
-  3.Technologies Used
-  4.Installation
-  5.Usage
-  6.API Reference
+1.	Introduction
+2.	Project Structure
+3.	Technologies Used
+4.	Installation
+5.	Usage
+6.	API Reference
 
 1. Introduction:
 Collaborative Whiteboard is an interactive web application that allows users to draw and collaborate on a shared whiteboard in real-time. This documentation provides an overview of the project structure, technologies used, installation instructions, and usage guidelines.
